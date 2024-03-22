@@ -34,17 +34,21 @@ button {
 
 button:hover{
     background-color: #102f5e;
-    color: #fff;
 }
 
 button:hover > i{
     color: #fff;
 }
 
+
 button i{
     color: #102f5e;
     font-weight: bold;
     pointer-events: none;
+} 
+
+button i:hover{
+    color: #fff;
 }
 
 input, select {
@@ -93,7 +97,10 @@ input, select {
 
 #cancel-edit-btn{
     margin-top: 1rem;
+}
 
+#cancel-edit-btn:hover{
+    color: #fff;
 }
 
 /* todo toolbar */
@@ -139,8 +146,8 @@ input, select {
 /* todolist */
 
 .todo{
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    /* background: rgb(131,58,180); */
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -148,6 +155,8 @@ input, select {
     border-bottom: 1px solid #ddd;
     transition: 0.3s;
     color: #fff;
+    border-radius: 10px;
+    margin: 5px 5px 5px 5px;
 }
 
 .todo h3{
@@ -161,12 +170,70 @@ input, select {
 }
 
 .done{
-    color: #000;
-    background-color: #000;
+    background: rgb(78,236,0);
+    background: linear-gradient(351deg, rgba(78,236,0,1) 55%, rgba(127,186,98,1) 89%, rgba(95,175,23,1) 100%);
 }
 
 .done h3{
     color: #fff;
     text-decoration: line-through;
     font-style: italic;
+}
+
+.github{
+    font-size: 1.2rem;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.github i{
+    margin-right: 5px;
+    color: #fff;
+}
+
+.github a{
+    font-size: 1.2rem; 
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.finish-todo{
+    border: 2.5px solid #102f5e;
+}
+
+.finish-todo:hover{
+    background-color: rgba(131,58,180,1);
+    color: #fff;
+    border: 2px solid rgba(131,58,180,1);
+}
+
+.edit-todo{
+    border: 2.5px solid #102f5e;
+}
+
+.edit-todo:hover{
+    background-color: rgba(252,176,69,1);
+    color: #fff;
+    border: 2.5px solid rgba(252,176,69,1);
+
+}
+
+.remove-todo{
+    border: 2.5px solid #102f5e;
+}
+
+.remove-todo:hover{
+    background-color: rgba(253,29,29,1);
+    color: #fff;
+    border: 2.5px solid rgba(253,29,29,1);
+
 }
