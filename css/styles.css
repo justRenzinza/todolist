@@ -13,8 +13,8 @@ html {
 }
 
 body{
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);  
+    background: rgb(64,23,213);
+    background: linear-gradient(90deg, rgba(64,23,213,1) 0%, rgba(148,187,233,1) 100%);
     background-position: center;
     background-size: cover;
 }
@@ -146,8 +146,8 @@ input, select {
 /* todolist */
 
 .todo{
-    /* background: rgb(131,58,180); */
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+    background: rgb(64,23,213);
+    background: linear-gradient(90deg, rgba(64,23,213,1) 0%, rgba(148,187,233,1) 100%);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -206,34 +206,26 @@ input, select {
     text-decoration: none;
 }
 
-.finish-todo{
-    border: 2.5px solid #102f5e;
+.finish-todo, .edit-todo, .remove-todo{
+    border: 2px solid #102f5e;
 }
 
 .finish-todo:hover{
-    background-color: rgba(131,58,180,1);
+    background-color: rgba(78,236,0,1);
     color: #fff;
-    border: 2px solid rgba(131,58,180,1);
-}
-
-.edit-todo{
-    border: 2.5px solid #102f5e;
+    border: 2px solid rgba(78,236,0,1);
 }
 
 .edit-todo:hover{
     background-color: rgba(252,176,69,1);
     color: #fff;
-    border: 2.5px solid rgba(252,176,69,1);
+    border: 2px solid rgba(252,176,69,1);
 
-}
-
-.remove-todo{
-    border: 2.5px solid #102f5e;
 }
 
 .remove-todo:hover{
     background-color: rgba(253,29,29,1);
     color: #fff;
-    border: 2.5px solid rgba(253,29,29,1);
+    border: 2px solid rgba(253,29,29,1);
 
 }
